@@ -3,16 +3,16 @@
     <title> JavaScript</title>
    <body>
         <script>
-            var ary = [10,"Dipali","kunal",true,null];
-            
+            var ary = [10,20,30,40,50];
+            var sum = 0;
             document.write("<ul>");
-            for(var a = 0; a < 5; a++)
+            for(var a = 0; a <= 4; a++)
             {
                 document.write("<li>" +ary[a] + "</li>");
-                
+                sum = sum + ary[a]; 
             }
             document.write("</ul>");
-            
+            document.write("Total Summation " +sum);
         </script>
     </body>
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced js</title>
+    <script>
+        function sum(name, ...args)   // function declared time using rest operator ...args last madhe vaprta
+        {
+            console.log(arguments);
+
+            document.write(`Hello ${name} : `);
+
+            let sum = 0;
+            for(let i in args)
+            {
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+
+        var arr = [10,20,30,40];
+
+        sum("Dipali",...arr);   // this is spread operator calling time used
+        
+    </script>
+</head>
+</html>

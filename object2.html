@@ -1,12 +1,17 @@
+<!DOCTYPE html>
 <html>
-    <body>
+    <head>
+        <title>Javascript</title>
         <script>
-            //By creating instance of object
-            var emp = new Object();
-            emp.id=101;
-            emp.name="Dipali Wagh";
-            emp.salary=40000;
-            document.write(emp.id+" "+emp.name+" "+emp.salary);
+            var person = new Object();
+
+            person.firstName = 'Dipali';
+            person.lastName = 'Wagh';
+            person.age = 25;
+
+            console.log(person);
+            document.write(person['firstName']);
         </script>
-    </body>
+
+    </head>
 </html>
