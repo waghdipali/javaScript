@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            
+            function emp(id,name,salary)
+            {
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+
+                this.changeSalary=changeSalary;
+
+                function changeSalary(othersalary)
+                {
+                    this.salary=othersalary;
+                }
+            }
+
+            
+            e=new emp(103,"Dipali wagh",4000);;
+
+            document.write(e.id+" "+e.name+" "+e.salary);
+
+            e.changeSalary(45000);
+            document.write("<br>"+e.id+" "+e.name+" "+e.salary);
+        </script>
+    </body>
+</html>
